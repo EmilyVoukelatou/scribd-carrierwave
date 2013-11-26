@@ -33,7 +33,7 @@ module ScribdCarrierWave
       if uploader.url =~ /^http(s?):\/\//
         uploader.url
       else
-        uploader.root + uploader.url
+        uploader.path
       end
     end
     
